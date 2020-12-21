@@ -29,6 +29,10 @@ h2, p{
   -webkit-tap-highlight-color: transparent;
 }
 
+.arrow-faq{
+  color:#ff000069;
+}
+
 .linkyoutube{
   position: relative;
   background-color: #ff000069;
