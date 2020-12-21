@@ -25,6 +25,13 @@
   /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
   -webkit-tap-highlight-color: transparent;
 }
+@media (hover: hover) {
+    .linkyoutube:hover {
+        background-color: var(--accentColor);
+        color: var(--bgColor);
+    }
+}
+
 
 .linkicons {
 margin-right:.3em;
@@ -38,7 +45,11 @@ margin-right:.3em;
     color: white;
 }
 
-.social-icons {
+.social-spacing:hover {
+  color: grey;
+}
+
+.center-icons {
 text-align: center;
 }
 
@@ -84,7 +95,7 @@ body {
 
 .link {
     position: relative;
-    background-color: transparent;
+    background-color: #0000006e;
     color: var(--accentColor);
     border: solid var(--accentColor) 2px;
     border-radius: 10px;
