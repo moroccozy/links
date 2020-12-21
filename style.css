@@ -6,6 +6,25 @@
     --accentColor: #E6E6E6;
     --font: 'Karla', sans-serif;
     --delay: .3s;
+    --shadow:black;
+}
+
+.faq{
+  position: relative;
+  background-color: #ff000069;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+  text-decoration: none;
+  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .linkyoutube{
@@ -43,14 +62,28 @@ margin-right:.3em;
     white-space: nowrap;
     line-height: 1.5;
     color: white;
+    text-shadow: 6px 6px var(--shadow),
+                 3px 3px var(--shadow);
 }
 
 .social-spacing:hover {
   color: grey;
 }
 
-.center-icons {
-text-align: center;
+#centered-icons {
+  position: relative;
+  margin:1em 0 1em 0;
+  color: var(--accentColor);
+  font-size: 1rem;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+}
+
+.pcenter{
+  text-align: center;
+
 }
 
 body {
@@ -83,7 +116,11 @@ body {
     font-family: var(--font);
     width: 100%;
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
+
+    text-shadow: 6px 6px var(--shadow),
+                 3px 3px var(--shadow);
+
 }
 
 #links {
@@ -144,6 +181,9 @@ body {
 }
 
 
+
+
+
 /*-------------------------animations-----------------------*/
 @keyframes transitionAnimation {
     0% {
@@ -173,6 +213,9 @@ body {
         transform: translateY(-2000px);
     }
 }
+
+
+
 
 
 /*-------------------------popup------------------------*/
@@ -276,6 +319,11 @@ body {
     background-color: var(--accentColor);
     color: var(--bgColor);
 }
+
+
+
+
+
 
 
 /*-----------------------parallax-----------------------*/
