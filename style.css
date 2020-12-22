@@ -9,6 +9,34 @@
     --shadow:black;
 }
 
+a{
+  color:white;
+}
+
+.titlelink{
+  text-decoration: none;
+}
+
+h1 {
+    color: var(--accentColor);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-shadow: 6px 6px var(--shadow),
+                 3px 3px var(--shadow);
+
+}
+
+h2{
+  font-size:1.2em;
+  font-weight:bold;
+  color:#faa;
+}
+
 h2, p{
   padding:0;
   margin:0;
@@ -113,22 +141,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-#userName {
-    color: var(--accentColor);
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.25;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
-    text-align: center;
-    /* text-decoration: none; */
-
-    text-shadow: 6px 6px var(--shadow),
-                 3px 3px var(--shadow);
-
-}
-
 #links {
     max-width: 675px;
     width: auto;
@@ -166,6 +178,7 @@ body {
     color: var(--bgColor);
 }
 
+/*  footer   */
 #hashtag {
     position: relative;
     padding-bottom: 20px;
@@ -176,6 +189,7 @@ body {
     width: 100%;
     text-align: center;
 
+
     /*  animation   */
     overflow: hidden;
     background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
@@ -185,6 +199,98 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+
+/*-------------------------faq------------------------*/
+.faq-wrapper{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tabs{
+  width:100%;
+}
+
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#ffffff30;;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+}
+.panels{
+  background-color:#121821;
+  min-height:200px;
+  max-width:675px;
+border: solid white 2px;
+border-radius: 10px;  overflow:hidden;
+  padding:20px;
+  color:white;
+  margin: 0 10px 20px 10px;
+  min-width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+.panels{min-width:50%;}
+}
+
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+/*-------------------------faq------------------------*/
+
+
+/*-------------------------faq guest table------------------------*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0;
+  text-align: left;
+  padding: 8px;
+}
+
+tr{
+  background-color: #ffffff69;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff30;
+}
+/*-------------------------faq------------------------*/
+
 
 
 
